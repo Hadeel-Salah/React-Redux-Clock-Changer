@@ -1,38 +1,95 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 0 0 20%;
+}
+
+.App__header {
+  color: rgba(255, 255, 255, 0.91);
+  font-size: 1.8rem;
+}
+
+.App__subheader {
+  color: #b4c0d8;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.App__text--white {
+  color: #fff;
+}
+
+.Counter {
+  margin: 3.5rem 0 0 0;
+}
+
+.Counter--main {
+  background: #030303;
+  box-shadow: -12px 36px 54px 18px rgba(34, 39, 53, 0.43);
+  padding: 1.5rem 3.5rem 3rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Counter--main__session {
+  margin-left: auto;
+}
+
+.Counter--main__session>select {
+  background: transparent;
+  outline: 0;
+  border: 0;
+}
+
+.Counter--main__values {
+  display: flex;
+  justify-content: center;
+}
+
+.Counter--main__values>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Counter__separator {
+  color: #fff;
+  margin: 0 2rem;
+}
+
+.Counter__text--grey {
+  color: #858ca6;
+  font-size: 0.6rem;
+}
+
+.Counter__text--large {
+  font-size: 3rem;
+}
+
+.App__buttons {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__buttons>button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid #a3a3a3;
+
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__buttons>button:active {
+  outline: 1px solid #fff;
 }
